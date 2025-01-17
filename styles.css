@@ -1,0 +1,398 @@
+/* Corps du document */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #000; /* Fond noir */
+    color: #ffffff; /* Texte blanc */
+    line-height: 1.6;
+}
+
+/* En-tête */
+header {
+    background: linear-gradient(90deg, #00b3ff, #0046ff);
+    box-shadow: 0 0 15px 2px #00b3ff;
+    padding: 1.5em 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #ffffff;
+    text-shadow: 0 0 10px #00b3ff, 0 0 20px #0046ff;
+    margin: 0;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #00b3ff;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0.5em 1em;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+    border: 2px solid #00b3ff;
+    background: linear-gradient(90deg, #00b3ff, #0046ff);
+    box-shadow: 0 0 10px #00b3ff, 0 0 20px #0046ff;
+    border-radius: 5px;
+}
+
+/* Section Héros */
+.hero {
+    text-align: center;
+    padding: 5em 1em;
+    background: radial-gradient(circle, #001f3f, #000000);
+    color: #f9fbfc;
+    text-shadow: 0 0 10px #00b3ff, 0 0 20px #0046ff;
+    font-size: 1.5rem; /* Taille définie à 1.5 fois la taille par défaut */
+}
+
+/* Compteur */
+.counter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh; /* Hauteur réduite pour moins d'espace au-dessus du compteur */
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 1em;
+    background: linear-gradient(135deg, #001f3f, #000000);
+    border: 3px solid #00b3ff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #0046ff, 0 0 40px #00b3ff;
+    text-align: center;
+    flex-direction: column;
+}
+
+.counter-container h2 {
+    font-size: 2.5em;
+    color: #ffffff;
+    text-shadow: 0 0 10px #00b3ff, 0 0 20px #0046ff;
+    margin-bottom: 0.5em;
+}
+
+.counter-container span {
+    font-size: 4em;
+    color: #00b3ff;
+    text-shadow: 0 0 20px #00b3ff, 0 0 30px #0046ff;
+    font-weight: bold;
+}
+
+.counter-container p {
+    font-size: 1.2em;
+    color: #ffffff;
+    margin-top: 0.5em;
+    text-shadow: 0 0 5px #00b3ff, 0 0 10px #0046ff;
+}
+
+/* Section Partenaires */
+.partners-section {
+    padding: 2em 1em;
+    text-align: center;
+    background: radial-gradient(circle, #001f3f, #000000); /* Fond spécial pour cette section */
+}
+
+.partners-section h2 {
+    font-size: 2.5em;
+    color: #f8f9f9;
+    text-shadow: 0 0 10px #00b3ff, 0 0 20px #0046ff;
+    margin-bottom: 1em;
+}
+
+/* Tableau des partenaires */
+.partners-table {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 20px #0046ff, 0 0 30px #00b3ff;
+    background: #111; /* Fond sombre */
+    border: 2px solid #00b3ff;
+}
+
+.partners-table th,
+.partners-table td {
+    padding: 1em;
+    text-align: center;
+    border: 1px solid #0046ff;
+}
+
+.partners-table th {
+    background: linear-gradient(90deg, #00b3ff, #0046ff);
+    color: #ffffff;
+    font-size: 1.2em;
+    text-shadow: 0 0 10px #00b3ff, 0 0 20px #0046ff;
+}
+
+.partners-table td {
+    color: #00b3ff;
+    font-size: 1em;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.partners-table tr:hover td {
+    background: #0046ff;
+    color: #ffffff;
+}
+
+.partners-table a {
+    color: #00b3ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.partners-table a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #00b3ff, 0 0 20px #0046ff;
+}
+
+/* Section Parlons-de-nous */
+.about-us-section {
+    padding: 2em 1em;
+    text-align: center;
+    background: radial-gradient(circle, #001f3f, #000000);
+    color: #ffffff;
+}
+
+.about-us-section h2 {
+    font-size: 2.5em;
+    color: #00b3ff;
+    text-shadow: 0 0 10px #00b3ff, 0 0 20px #0046ff;
+    margin-bottom: 1em;
+}
+
+.about-us-section p {
+    font-size: 1.2em;
+    color: #ffffff;
+    margin-top: 0.5em;
+    line-height: 1.6;
+    text-shadow: 0 0 5px #00b3ff, 0 0 10px #0046ff;
+}
+
+/* Section Exemples - Positionner le cadran au-dessus */
+.examples-section {
+    padding: 3em 1em;
+    background: linear-gradient(135deg, #001f3f, #000000);
+    color: #ffffff;
+    text-align: center;
+}
+
+.examples-section h2 {
+    font-size: 2.5em;
+    color: #00b3ff;
+    text-shadow: 0 0 10px #00b3ff, 0 0 20px #0046ff;
+    margin-bottom: 2em;
+}
+
+.examples-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.example-card {
+    background: #111;
+    border: 2px solid #00b3ff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #0046ff, 0 0 30px #00b3ff;
+    padding: 1.5em;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.example-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #00b3ff, 0 0 40px #0046ff;
+}
+
+.example-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+
+.example-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    color: #00b3ff;
+    text-shadow: 0 0 10px #00b3ff, 0 0 20px #0046ff;
+}
+
+.example-card p {
+    font-size: 1em;
+    color: #ffffff;
+    text-shadow: 0 0 5px #00b3ff, 0 0 10px #0046ff;
+}
+
+/* Optimisations générales pour la responsivité */
+@media (max-width: 768px) {
+    .examples, .partners {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .counter {
+        width: 90%;
+    }
+
+    .explanation {
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    /* Section Exemples */
+    .examples-section h2 {
+        font-size: 2em;
+    }
+
+    .example-card {
+        width: 80%;
+    }
+}
+
+/* Footer */
+footer {
+    background: #000000;
+    color: #00b3ff;
+    text-align: center;
+    padding: 1em 0;
+    border-top: 2px solid #00b3ff;
+    box-shadow: 0 -5px 15px #0046ff;
+}
+/* Section contact spécifique */
+.contact-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* Assurez-vous que la section occupe une grande partie de la page */
+    padding: 20px;
+}
+.contact-section {
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    background-color: #1f1f1f;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+    border: 1px solid #00bfff;
+}
+
+.contact-section h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #00bfff; /* Bleu néon */
+}
+
+.contact-section p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: #cccccc;
+}
+
+/* Formulaire dans la section contact */
+.contact-section form {
+    text-align: center;
+}
+
+.contact-section .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-section label {
+    display: block;
+    font-size: 1rem;
+    color: #00bfff;
+    margin-bottom: 5px;
+}
+
+.contact-section input,
+.contact-section textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #00bfff;
+    border-radius: 5px;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.contact-section textarea {
+    resize: none;
+}
+
+.contact-section button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-section button:hover {
+    background-color: #0056b3;
+}
+/* Centrage uniquement pour la page de contact */
+#contact-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Section contact spécifique */
+#contact-page .contact-section {
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    background-color: #1f1f1f;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+    border: 1px solid #00bfff;
+}
+
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #1f1f1f;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

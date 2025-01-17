@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digitale Dominance - Accueil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Digitale Dominance</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="parlons-de-nous.html">Parlons de nous</a></li>
+                <li><a href="partenaires.html">Partenaires</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Bienvenue chez Digitale Dominance</h2>
+            <p>Excellence en conception de sites web </p>
+        </section>
+
+       
+    </main>
+    <section class="counter-container">
+        <h2>Nombre de Partenaires</h2>
+        <span id="counter">0</span>
+        <p>Rejoignez notre liste croissante de partenaires !</p>
+    </section>
+    
+    <script>
+        let count = 0;
+        const counterElement = document.getElementById('counter');
+        const maxPartners = 3; // Le nombre maximum de partenaires avant que le compteur ne s'arrête.
+
+        // Simule un compteur qui augmente toutes les 1 secondes
+        function incrementCounter() {
+            if (count < maxPartners) {
+                count++;
+                counterElement.textContent = count;
+            } else {
+                clearInterval(counterInterval); // Arrête le compteur lorsque le nombre maximum est atteint
+                console.log("Le compteur a atteint le nombre maximum et a été arrêté.");
+            }
+        }
+
+        // Démarre l'animation du compteur
+        const counterInterval = setInterval(incrementCounter, 1000);
+    </script>
+    
+    <footer>
+        <p>&copy; 2025 Digitale Dominance. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
