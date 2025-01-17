@@ -427,4 +427,39 @@ body {
     max-width: 100%;
     height: auto;
   }
-  
+  /* Styles généraux pour les grands écrans (bureau) */
+body {
+    font-size: 16px;
+}
+
+.container {
+    width: 80%;
+}
+/* Exemple d'un conteneur avec largeur responsive */
+.container {
+    width: 100%; /* 100% de la largeur de l'écran */
+    max-width: 1200px; /* Limite la largeur maximale */
+}
+
+/* Exemple d'élément avec une hauteur adaptable */
+.hero {
+    height: 60vh; /* 60% de la hauteur de l'écran */
+}
+
+/* Exemple de texte responsive */
+h1 {
+    font-size: 6vw; /* Taille du texte relative à la largeur de l'écran */
+}
+img {
+    max-width: 100%; /* L'image ne débordera pas de son conteneur */
+    height: auto; /* L'image garde son ratio */
+}
+form {
+    width: 100%;
+}
+
+input, textarea, button {
+    width: 100%;
+    box-sizing: border-box; /* Inclut la marge et le padding dans la largeur de l'élément */
+}
+
