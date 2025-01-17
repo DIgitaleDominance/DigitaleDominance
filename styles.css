@@ -396,3 +396,35 @@ footer {
     bottom: 0;
     width: 100%;
 }
+/* Par défaut pour les grands écrans */
+body {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  /* Styles pour les écrans de moins de 768px (tablettes et téléphones) */
+  @media (max-width: 768px) {
+    body {
+      font-size: 16px;
+      padding: 10px;
+    }
+  
+    .contact-section {
+      padding: 20px;
+      width: 100%;
+    }
+  
+    .form-group {
+      margin-bottom: 10px;
+    }
+  
+    .form-group input, .form-group textarea {
+      width: 100%;
+      padding: 8px;
+    }
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
