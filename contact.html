@@ -21,8 +21,8 @@
         <section class="contact-section">
             <h1>Contactez-nous</h1>
             <p>Vous avez une question ou besoin d'informations ? Envoyez-nous un message :</p>
-           
-            <form action="mailto:digitaledominance2@gmail.com" method="post" enctype="text/plain">
+        
+            <form id="contact-form" action="/send-mail" method="post">
                 <div class="form-group">
                     <label for="name">Nom</label>
                     <input type="text" id="name" name="name" placeholder="Votre nom" required>
@@ -37,7 +37,32 @@
                 </div>
                 <button type="submit">Envoyer</button>
             </form>
+            <script>
+                document.getElementById('contact-form').addEventListener('submit', function(e) {
+                    const email = document.getElementById('email').value;
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Validation standard
+                
+                    if (!emailRegex.test(email)) {
+                        e.preventDefault();
+                        alert('Veuillez entrer une adresse email valide.');
+                    }
+                });                
+            </script>
+            
         </section>
+        
+        <script>
+            // Validation du formulaire côté client pour une sécurité supplémentaire
+            document.getElementById('contact-form').addEventListener('submit', function(e) {
+                const email = document.getElementById('email').value;
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        
+                if (!emailRegex.test(email)) {
+                    e.preventDefault();
+                    alert('Veuillez entrer une adresse email valide.');
+                }
+            });
+        </script>
     </main>
     
     <footer>
